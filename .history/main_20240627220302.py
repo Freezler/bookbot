@@ -25,7 +25,7 @@ def main():
         for char in lowered_string:
             if char in "aAeEiIoOuU":
                 number_of_vowels += 1
-        print(f"Number of vowels: {number_of_vowels}")
+        print(f"Num∏ber of vowels: {number_of_vowels}")
     else:
         print("Failed to read the book.")
 

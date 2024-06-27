@@ -11,7 +11,7 @@ def count_words(book):
     num_words = len(words)
     return num_words
 
-def main():
+def main():  # sourcery skip: extract-method, move-assign, sum-comprehension
     number_of_vowels = 0
     book_path = "/Users/randydevries/workspace/github.com/FREEZLER/bookbot/books/frankenstein.txt"
     book = read_book(book_path)
@@ -25,7 +25,7 @@ def main():
         for char in lowered_string:
             if char in "aAeEiIoOuU":
                 number_of_vowels += 1
-        print(f"Number of vowels: {number_of_vowels}")
+        print(f"Num∏ber of vowels: {number_of_vowels}")
     else:
         print("Failed to read the book.")
 
