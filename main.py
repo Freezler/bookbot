@@ -32,5 +32,7 @@ def main():
         print("Failed to read the book.")
 
 
+# check if the script is being run directly if not import it!
 if __name__ == "__main__":
     main()
+
