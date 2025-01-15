@@ -6,10 +6,12 @@ def read_book(file_path):
         print(f"The file {file_path} was not found.")
         return None
 
+
 def count_words(book):
     words = book.split()
     num_words = len(words)
     return num_words
+
 
 def main():
     number_of_vowels = 0
@@ -28,6 +30,7 @@ def main():
         print(f"Number of vowels: {number_of_vowels}")
     else:
         print("Failed to read the book.")
+
 
 if __name__ == "__main__":
     main()
