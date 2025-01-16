@@ -15,11 +15,10 @@ def read_book(file_path: str) -> str:
                 return file.read()
         else:
             print(f"Unsupported file format: {file_path}")
-            return None
+            return ""
     except FileNotFoundError:
         print(f"The file {file_path} was not found.")
-        return None
-
+        return ""
 
 def get_word_count(book_content: str) -> int:
     words = book_content.split()
